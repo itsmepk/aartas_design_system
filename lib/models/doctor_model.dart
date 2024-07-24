@@ -36,6 +36,7 @@ class DoctorData {
   int? id;
   String? clinicId;
   String? roomId;
+  String? prefix;
   String? doctorName;
   String? email;
   String? fcmToken;
@@ -84,6 +85,7 @@ class DoctorData {
     this.id,
     this.clinicId,
     this.roomId,
+    this.prefix,
     this.doctorName,
     this.email,
     this.fcmToken,
@@ -134,6 +136,7 @@ class DoctorData {
     id = json['id'];
     clinicId = json['clinic_id'];
     roomId = json['room_id'];
+    prefix = json['prefix'];
     doctorName = json['doctor_name'];
     email = json['email'];
     fcmToken = json['fcm_token'];
@@ -209,6 +212,7 @@ class DoctorData {
     data['id'] = id;
     data['clinic_id'] = clinicId;
     data['room_id'] = roomId;
+    data['prefix'] = prefix;
     data['doctor_name'] = doctorName;
     data['email'] = email;
     data['fcm_token'] = fcmToken;
